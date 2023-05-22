@@ -8,8 +8,6 @@ async function getData(url) {
 btnTransition.addEventListener("click", () => {
   if (inputVal.value.substring(0, 28) === "https://api.github.com/users") {
     getData(`${inputVal.value}`).then((data) => {
-      console.log(inputVal.value);
-
       container.innerHTML = `
       <div class="logo">
               <div class="image">
